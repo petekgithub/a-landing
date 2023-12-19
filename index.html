@@ -3,15 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aqeltech-landing</title>
-    <link rel="stylesheet" href="public/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+      defer
+    ></script>
+    <title>Aqeltech - Landing Page</title>
   </head>
-  <body class="bg-blue-500">
-    <div x-data="{ open: false }">
-      <button @click="open = true">Expand</button>
-
-      <span x-show="open"> Content... </span>
+  <body>
+    <!-- Navbar -->
+    <div class="flex items-center justify-between ml-50 bg-white px-4 py-2">
+      <div class="w-[62.61px] h-[50px] left-0 top-0">
+        <img src="./assets/images/logo.svg" alt="aqeltech-logo" />
+      </div>
+      <ul
+        class="flex space-x-8 text-center text-slate-950 text-sm font-normal font-['Ubuntu'] capitalize"
+      >
+        <li>Home</li>
+        <li>
+          Services
+          <img
+            src="assets/icons/downArrow.svg"
+            alt="arrow"
+            class="inline ml-1"
+          />
+        </li>
+        <li>
+          Solutions
+          <img
+            src="assets/icons/downArrow.svg"
+            alt="arrow"
+            class="inline ml-1"
+          />
+        </li>
+        <li>Hire Magento Developer</li>
+        <li>Magento 2</li>
+        <li>Support</li>
+        <li>Portfolio</li>
+        <li>Career</li>
+      </ul>
+      <div class="flex space-x-4 w-[11.08px] h-[11px]">
+        <img src="assets/icons/call.svg" alt="Call" />
+        <img src="assets/icons/mail.svg" alt="Mail" />
+      </div>
     </div>
-    <script src="public/script.js"></script>
+
+    <!-- Homepage -->
+    <section class="bg-gray-100">
+      <!-- Main Content for Homepage -->
+    </section>
+
+    <!-- Project Management Page -->
+    <section class="bg-gray-200">
+      <!-- Project Management Content Goes Here -->
+    </section>
+
+    <!-- Services Page -->
+    <section class="bg-gray-300">
+      <!-- Services Content Goes Here -->
+    </section>
+
+    <!-- Development Solutions Page -->
+    <section class="bg-gray-400">
+      <!-- Development Solutions Content Goes Here -->
+    </section>
+
+    <!-- Development Page -->
+    <section class="bg-gray-500">
+      <!-- Development Content Goes Here -->
+    </section>
+
+    <!-- Why Choose Page -->
+    <section class="bg-gray-600">
+      <!-- Why Choose Content Goes Here -->
+    </section>
+
+    <!-- Portfolio and Brands Page -->
+    <section class="bg-gray-700">
+      <!-- Portfolio and Brands Content Goes Here -->
+    </section>
   </body>
 </html>
