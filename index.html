@@ -52,12 +52,34 @@
       </div>
     </div>
 
-    <div class="w-1440 h-650 bg-gray-100">
-      <img
-        src="./assets/images/homepic.png"
-        class="block w-full h-full object-cover"
-      />
+    <div className="relative bg-cover bg-no-repeat md:h-[498px] h-[650px] pl-[90px] pt-[90px] md:px-5 w-full flex">
+      {/* First rectangle */}
+      <div className="h-10 bg-neutral-400 w-64"></div>
+      
+      {/* Second rectangle */}
+      <div className="w-[570px] h-[25px] bg-neutral-400"></div>
+      
+      {/* Third rectangle */}
+      <div className="w-[412px] h-[25px] bg-neutral-400"></div>
+      
+      {/* Fourth rectangle */}
+      <div className="w-[645px] h-[25px] bg-neutral-400"></div>
+      
+      {/* Fifth rectangle */}
+      <div className="w-[51px] h-[25px] bg-neutral-400"></div>
+      
+      {/* Sixth rectangle */}
+      <div className="w-[317px] h-[25px] bg-neutral-400"></div>
+      
+      {/* Seventh rectangle */}
+      <div className="w-[317px] h-[25px] bg-neutral-400"></div>
+      
+      {/* Eighth rectangle */}
+      <div className="w-[317px] h-[25px] bg-neutral-400"></div>
+      
+      <Img className="absolute h-[413px] left-[10%] top-[14%]" src="assets/icons/icon.svg" alt="text" />
     </div>
+
     <div>
       <!-- Project Management Section -->
       <section class="bg-white w-1440 h-7271 relative">
@@ -664,35 +686,42 @@
           </div>
         </div>
       </section>
-      <section class="bg-stone-900 h-90 flex">
-        <p>Want to unleash the unlimited potential of <span class="bg-orange-500">Magento</span> for your business </p>
-         <button
-              class="bg-blue-500 text-white py-2 px-4 rounded ml-86 mr-86 mb-26"
-            >
-              TALK TO US
-            </button>
-      </section>
+    <section class="bg-stone-900 h-90 flex items-center justify-between">
+      <p>Want to unleash the unlimited potential of <span class="bg-orange-500">Magento</span> for your business </p>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded">
+        TALK TO US
+      </button>
+    </section>
+
       <!-- Portfolio and Brands Content Goes Here -->
-      <section class="bg-gray-400">
-        <div class="flex">
-          <h2 class="text-xl font-bold">Our Portfolio</h2><br />
-          <p>We are a leading Magento development company that has completed a large number of projects till date.</p>
-          <img  src="assets/images/empty.svg"/>
-          <img  src="assets/images/empty.svg"/>
-          <img  src="assets/images/empty.svg"/>
-        </div>
-        <img src="assets/icons/indicators.svg" />
-        <div>
-          <h2 class="text-xl font-bold">Our Brands</h2>
-          <img src="assets/icons/leftarrow.svg"/>
-          <img src="assets/icons/fresh.svg" />
-          <img src="assets/icons/labore.svg" />
-          <img src="assets/icons/aliqua.svg" />
-          <img src="assets/icons/rightarrow.svg"/>
+     <section class="bg-gray-400 flex flex-col items-center">
+  <!-- Our Portfolio -->
+  <div class="flex flex-col items-center mb-4">
+    <h2 class="text-xl font-bold mb-2">Our Portfolio</h2>
+    <p class="mb-2">We are a leading Magento development company that has completed a large number of projects till date.</p>
+    <div class="flex">
+      <img src="assets/images/empty.svg" alt="Image 1" class="mr-2"/>
+      <img src="assets/images/empty.svg" alt="Image 2" class="mr-2"/>
+      <img src="assets/images/empty.svg" alt="Image 3" class="mr-2"/>
+    </div>
+  </div>
 
-        </div>
+  <!-- Indicators -->
+  <img src="assets/icons/indicators.svg" class="mb-4" />
 
-      </section>
+  <!-- Our Brands -->
+  <div class="bg-neutral-100 flex flex-col items-center">
+    <h2 class="text-xl font-bold mb-2">Our Brands</h2>
+    <div class="flex">
+      <img src="assets/icons/leftarrow.svg" class="mr-2"/>
+      <img src="assets/icons/fresh.svg" class="mr-2" />
+      <img src="assets/icons/labore.svg" class="mr-2" />
+      <img src="assets/icons/aliqua.svg" class="mr-2" />
+      <img src="assets/icons/rightarrow.svg" />
+    </div>
+  </div>
+</section>
+
     </div>
   </body>
 </html>
